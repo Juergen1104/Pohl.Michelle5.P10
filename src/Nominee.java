@@ -62,8 +62,6 @@ public class Nominee {
         return nomList.toArray(new Nominee[nomList.size()]);
     }
 
-
-
     public static void main(String[] args) {
         Nominee[]  nArr = Nominee.getNominees();
         System.out.println(nArr[0]);

@@ -14,17 +14,16 @@ public class FilterUtils {
                                               String category,
                                               boolean winnerOnly) {
         ArrayList<Nominee> nomList = new ArrayList<>();
-        for (Nominee nom : nArr) {                 
+        for (Nominee nom : nArr) {
             if (nom.getYear() == y) {
                 if (category.equals("ALL") || category.equals(nom.getCategory())) {
                     if (!winnerOnly || nom.hasWon()) {
-                        nomList.add(nom); 
+                        nomList.add(nom);
                     }
-                } 
+                }
             }
         }
-        
-        
+
         return nomList.toArray(new Nominee[nomList.size()]);
     }
 }
